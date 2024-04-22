@@ -1,0 +1,62 @@
+[
+{
+  "directory": "/home/iwill/wly/ChatServer/build/src/server",
+  "command": "/usr/bin/g++  -I/home/iwill/wly/ChatServer/include -I/home/iwill/wly/ChatServer/include/server -I/home/iwill/wly/ChatServer/include/server/db -I/home/iwill/wly/ChatServer/include/server/pojo -I/home/iwill/wly/ChatServer/include/server/model -I/home/iwill/wly/ChatServer/include/server/redis -I/home/iwill/wly/ChatServer/thirdparty -g -g -o CMakeFiles/ChatServer.dir/chat_server.cpp.o -c /home/iwill/wly/ChatServer/src/server/chat_server.cpp",
+  "file": "/home/iwill/wly/ChatServer/src/server/chat_server.cpp",
+  "output": "src/server/CMakeFiles/ChatServer.dir/chat_server.cpp.o"
+},
+{
+  "directory": "/home/iwill/wly/ChatServer/build/src/server",
+  "command": "/usr/bin/g++  -I/home/iwill/wly/ChatServer/include -I/home/iwill/wly/ChatServer/include/server -I/home/iwill/wly/ChatServer/include/server/db -I/home/iwill/wly/ChatServer/include/server/pojo -I/home/iwill/wly/ChatServer/include/server/model -I/home/iwill/wly/ChatServer/include/server/redis -I/home/iwill/wly/ChatServer/thirdparty -g -g -o CMakeFiles/ChatServer.dir/chat_service.cpp.o -c /home/iwill/wly/ChatServer/src/server/chat_service.cpp",
+  "file": "/home/iwill/wly/ChatServer/src/server/chat_service.cpp",
+  "output": "src/server/CMakeFiles/ChatServer.dir/chat_service.cpp.o"
+},
+{
+  "directory": "/home/iwill/wly/ChatServer/build/src/server",
+  "command": "/usr/bin/g++  -I/home/iwill/wly/ChatServer/include -I/home/iwill/wly/ChatServer/include/server -I/home/iwill/wly/ChatServer/include/server/db -I/home/iwill/wly/ChatServer/include/server/pojo -I/home/iwill/wly/ChatServer/include/server/model -I/home/iwill/wly/ChatServer/include/server/redis -I/home/iwill/wly/ChatServer/thirdparty -g -g -o CMakeFiles/ChatServer.dir/main.cpp.o -c /home/iwill/wly/ChatServer/src/server/main.cpp",
+  "file": "/home/iwill/wly/ChatServer/src/server/main.cpp",
+  "output": "src/server/CMakeFiles/ChatServer.dir/main.cpp.o"
+},
+{
+  "directory": "/home/iwill/wly/ChatServer/build/src/server",
+  "command": "/usr/bin/g++  -I/home/iwill/wly/ChatServer/include -I/home/iwill/wly/ChatServer/include/server -I/home/iwill/wly/ChatServer/include/server/db -I/home/iwill/wly/ChatServer/include/server/pojo -I/home/iwill/wly/ChatServer/include/server/model -I/home/iwill/wly/ChatServer/include/server/redis -I/home/iwill/wly/ChatServer/thirdparty -g -g -o CMakeFiles/ChatServer.dir/db/db.cpp.o -c /home/iwill/wly/ChatServer/src/server/db/db.cpp",
+  "file": "/home/iwill/wly/ChatServer/src/server/db/db.cpp",
+  "output": "src/server/CMakeFiles/ChatServer.dir/db/db.cpp.o"
+},
+{
+  "directory": "/home/iwill/wly/ChatServer/build/src/server",
+  "command": "/usr/bin/g++  -I/home/iwill/wly/ChatServer/include -I/home/iwill/wly/ChatServer/include/server -I/home/iwill/wly/ChatServer/include/server/db -I/home/iwill/wly/ChatServer/include/server/pojo -I/home/iwill/wly/ChatServer/include/server/model -I/home/iwill/wly/ChatServer/include/server/redis -I/home/iwill/wly/ChatServer/thirdparty -g -g -o CMakeFiles/ChatServer.dir/model/friend_model.cpp.o -c /home/iwill/wly/ChatServer/src/server/model/friend_model.cpp",
+  "file": "/home/iwill/wly/ChatServer/src/server/model/friend_model.cpp",
+  "output": "src/server/CMakeFiles/ChatServer.dir/model/friend_model.cpp.o"
+},
+{
+  "directory": "/home/iwill/wly/ChatServer/build/src/server",
+  "command": "/usr/bin/g++  -I/home/iwill/wly/ChatServer/include -I/home/iwill/wly/ChatServer/include/server -I/home/iwill/wly/ChatServer/include/server/db -I/home/iwill/wly/ChatServer/include/server/pojo -I/home/iwill/wly/ChatServer/include/server/model -I/home/iwill/wly/ChatServer/include/server/redis -I/home/iwill/wly/ChatServer/thirdparty -g -g -o CMakeFiles/ChatServer.dir/model/group_model.cpp.o -c /home/iwill/wly/ChatServer/src/server/model/group_model.cpp",
+  "file": "/home/iwill/wly/ChatServer/src/server/model/group_model.cpp",
+  "output": "src/server/CMakeFiles/ChatServer.dir/model/group_model.cpp.o"
+},
+{
+  "directory": "/home/iwill/wly/ChatServer/build/src/server",
+  "command": "/usr/bin/g++  -I/home/iwill/wly/ChatServer/include -I/home/iwill/wly/ChatServer/include/server -I/home/iwill/wly/ChatServer/include/server/db -I/home/iwill/wly/ChatServer/include/server/pojo -I/home/iwill/wly/ChatServer/include/server/model -I/home/iwill/wly/ChatServer/include/server/redis -I/home/iwill/wly/ChatServer/thirdparty -g -g -o CMakeFiles/ChatServer.dir/model/offline_message_model.cpp.o -c /home/iwill/wly/ChatServer/src/server/model/offline_message_model.cpp",
+  "file": "/home/iwill/wly/ChatServer/src/server/model/offline_message_model.cpp",
+  "output": "src/server/CMakeFiles/ChatServer.dir/model/offline_message_model.cpp.o"
+},
+{
+  "directory": "/home/iwill/wly/ChatServer/build/src/server",
+  "command": "/usr/bin/g++  -I/home/iwill/wly/ChatServer/include -I/home/iwill/wly/ChatServer/include/server -I/home/iwill/wly/ChatServer/include/server/db -I/home/iwill/wly/ChatServer/include/server/pojo -I/home/iwill/wly/ChatServer/include/server/model -I/home/iwill/wly/ChatServer/include/server/redis -I/home/iwill/wly/ChatServer/thirdparty -g -g -o CMakeFiles/ChatServer.dir/model/user_model.cpp.o -c /home/iwill/wly/ChatServer/src/server/model/user_model.cpp",
+  "file": "/home/iwill/wly/ChatServer/src/server/model/user_model.cpp",
+  "output": "src/server/CMakeFiles/ChatServer.dir/model/user_model.cpp.o"
+},
+{
+  "directory": "/home/iwill/wly/ChatServer/build/src/server",
+  "command": "/usr/bin/g++  -I/home/iwill/wly/ChatServer/include -I/home/iwill/wly/ChatServer/include/server -I/home/iwill/wly/ChatServer/include/server/db -I/home/iwill/wly/ChatServer/include/server/pojo -I/home/iwill/wly/ChatServer/include/server/model -I/home/iwill/wly/ChatServer/include/server/redis -I/home/iwill/wly/ChatServer/thirdparty -g -g -o CMakeFiles/ChatServer.dir/redis/redis.cpp.o -c /home/iwill/wly/ChatServer/src/server/redis/redis.cpp",
+  "file": "/home/iwill/wly/ChatServer/src/server/redis/redis.cpp",
+  "output": "src/server/CMakeFiles/ChatServer.dir/redis/redis.cpp.o"
+},
+{
+  "directory": "/home/iwill/wly/ChatServer/build/src/client",
+  "command": "/usr/bin/g++  -I/home/iwill/wly/ChatServer/include -I/home/iwill/wly/ChatServer/include/server -I/home/iwill/wly/ChatServer/include/server/db -I/home/iwill/wly/ChatServer/include/server/pojo -I/home/iwill/wly/ChatServer/include/server/model -I/home/iwill/wly/ChatServer/include/server/redis -I/home/iwill/wly/ChatServer/thirdparty -g -g -o CMakeFiles/ChatClient.dir/main.cpp.o -c /home/iwill/wly/ChatServer/src/client/main.cpp",
+  "file": "/home/iwill/wly/ChatServer/src/client/main.cpp",
+  "output": "src/client/CMakeFiles/ChatClient.dir/main.cpp.o"
+}
+]
