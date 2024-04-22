@@ -119,6 +119,7 @@ sh auto_build.sh
 ./bin/ChatServer 127.0.0.1 6000		# 服务端1
 ./bin/ChatServer 127.0.0.1 6001		# 服务端2
 ./bin/ChatClient 127.0.0.1 8000		# 客户端1
+./bin/ChatClient 127.0.0.1 8000		# 客户端2
 ```
 
 
