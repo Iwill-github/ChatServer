@@ -84,7 +84,7 @@ sudo vim /etc/nginx/nginx.conf      # 添加tcp长连接负载均衡配置（拷
 stream{
     upstream MyServer{
     server 127.0.0.1:6000 weight=1 max_fails=3 fail_timeout=30s;    # chatServer1 运行在本地的6000端口
-    server 127.0.0.1:6001 weight=1 max_fails=3 fail_timeout=30s;    # chatServer2 运行在本地的6001端口
+    server 127.0.0.1:6001 weight=1 max_fails=3 fail_timeout=30s;    # chatServer2 运行在本地的6001端口（注意，实际上服务器集群应该运行在其他服务器上，此处用于简单测试）
     }
 
     server{

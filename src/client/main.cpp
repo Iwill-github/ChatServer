@@ -80,7 +80,7 @@ int main(int argc, char **argv){
 
     // 连接服务器成功，启动接收子线程
     std::thread readTask(readTaskHandler, clientfd);    // pthread_create
-    readTask.detach();                                  // pthread_detach
+    readTask.detach();                                  // pthread_detach。与父线程分离，使得父线程在结束时不会等待该线程完成，这样可以防止子线程成为僵尸进程
 
     // main线程用于接收用户输入，负责发送数据
     for (;;){
@@ -299,7 +299,7 @@ void doRegResponse(json &responsejs)
 {
     if (0 != responsejs["error"].get<int>()) // 注册失败
     {
-        cerr << "name is already exist, register error!" << endl;
+        cout << "name is already exist, register error!" << endl;
     }
     else // 注册成功
     {

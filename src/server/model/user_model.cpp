@@ -10,8 +10,8 @@ bool UserModel::insert(User& user){
     char sql[1024] = {0};
     // .c_str() 是 std::string 类的一个成员函数，用于获取该字符串对象内部存储的 C 风格字符串（即以 \0 结尾的字符数组）。返回值类型为 const char*。
     // snprintf 能有效防止因目标缓冲区过小而导致的缓冲区溢出，提高了代码的安全性。
-    snprintf(sql, sizeof(sql), "insert into user(name, password, state) values('%s', '%s', '%s');", 
-                user.getName().c_str(), user.getPassword().c_str(), user.getState().c_str());
+    snprintf(sql, sizeof(sql), "insert into user(name, password) values('%s', '%s');", 
+                user.getName().c_str(), user.getPassword().c_str());
 
     MySQL mysql;
     if(mysql.connect()){

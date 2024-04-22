@@ -7,6 +7,19 @@
     telnet <hostname or IP> <port>
 
 
+# gdb 调试
+    ps -u                       # 查看进程
+    gdb attach pid              # 挂载进程
+    infor threads               # 查看线程
+    thread 2                    # 切换线程
+    bt                          # 查看调用栈
+
+
+    gdb ChatServer              # 进入gdb调试
+    break chatservice.cpp:41    # 设置断点
+    run                         # 运行程序（如果有参数，需要在run后加上，如 run 127.0.0.1 6000）
+    
+
 # unbuntu 重新装mysql步骤
     sudo apt-get update
     sudo apt purge mysql-*
@@ -42,12 +55,6 @@
 # mysql 备份和恢复数据库
     mysqldump -u root -p chat > chat_backup.sql
     mysql -u root -p chat < chat_backup.sql
-
-
-# gdb 调试
-    gdb ChatServer              # 进入gdb调试
-    break chatservice.cpp:41    # 设置断点
-    run                         # 运行程序（如果有参数，需要在run后加上，如 run 127.0.0.1 6000）
 
 
 # nginx 配置tcp负载均衡（有个非常重要的算法：一致性哈希算法，一般用于短连接服务器，chatserver是长连接服务器）
