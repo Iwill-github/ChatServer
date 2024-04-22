@@ -122,7 +122,7 @@ sh auto_build.sh
 ./bin/ChatClient 127.0.0.1 8000		# 客户端2
 ```
 
-![test](./img/test.jpg "test")
+![test](./imgs/test.jpg "test")
 
 
 
