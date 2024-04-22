@@ -3,9 +3,9 @@
 
 
 
-# 环境配置（ubuntu）
+# 1. 环境配置（ubuntu）
 
-## 安装cmake、g++等编译环境
+## 1.1 安装cmake、g++等编译环境
 
 ```bash
 # 安装cmake、g++等编译环境
@@ -14,7 +14,7 @@ sudo apt-get install g++
 sudo apt-get install gcc
 ```
 
-## 安装muduo库
+## 1.2 安装muduo库
 
 ```bash
 # muduo依赖于Boost，所以需要安装Boost（一个准标准库）
@@ -31,7 +31,7 @@ cd ..
 sudo rm build/ muduo/ -r
 ```
 
-## 安装mysql
+## 1.3 安装mysql
 
 ```bash
 # 重新安装mysql（以8.0为例）
@@ -60,7 +60,7 @@ sudo mysql -u root -p chat < chat_backup.sql							# 创建数据库
 # sudo service mysql status		# 数据库状态
 ```
 
-## 安装redis
+## 1.4 安装redis
 
 ```bash
 sudo apt-get install redis-server           # 安装redis（安装完成后，自动启动）
@@ -74,11 +74,11 @@ cd .. && sudo rm hiredis -r
 sudo ldconfig /usr/local/lib                        # 刷新动态链接库
 ```
 
-## 安装nginx
+## 1.5 安装nginx
 
 ```bash
 sudo apt install nginx              # 默认配置文件目录/etc/nginx。/etc通常用于存放linux系统的配置文件。
-sudo vim /etc/nginx/nginx.conf      # 添加tcp长连接负载均衡配置（与http负载均衡配置同级）
+sudo vim /etc/nginx/nginx.conf      # 添加tcp长连接负载均衡配置（拷贝下述文本至文件中。与http负载均衡配置同级）
 #########################################################################
 # nginx tcp loadbalance config
 stream{
@@ -103,7 +103,7 @@ sudo nginx -s stop                          # 停止nginx服务
 
 
 
-# 编译该项目
+# 2. 编译该项目
 
 ```bash
 cd ChatServer
@@ -112,7 +112,7 @@ sh auto_build.sh
 
 
 
-# 测试
+# 3. 测试
 
 ```bash
 # 注意负载均衡器是工作在8000端口的，所以要使用8000端口进行测试
