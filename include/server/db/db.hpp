@@ -6,9 +6,9 @@
 #include <string>
 
 // 数据库配置信息
-static std::string server = "192.168.48.129";
+static std::string server = "127.0.0.1";
 static std::string user = "wly";
-static std::string password = "nyjzdl9758&";
+static std::string password = "123456";
 static std::string dbname = "chat";
 // 数据库操作类
 

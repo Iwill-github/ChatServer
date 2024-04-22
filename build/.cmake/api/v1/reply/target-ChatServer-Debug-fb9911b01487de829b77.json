@@ -53,7 +53,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
+					"fragment" : "-g -g"
 				}
 			],
 			"includes" : 
@@ -108,7 +108,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-g",
+				"fragment" : "-g -g",
 				"role" : "flags"
 			},
 			{
