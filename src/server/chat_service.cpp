@@ -3,7 +3,7 @@
 #include <muduo/base/Logging.h>
 
 
-// 获取单例对象的接口函数
+// 获取单例对象的接口函数（懒汉式单例模式，即，创建实例时才会创建单例对象）
 ChatService* ChatService::instance(){
     static ChatService service;
     return &service;
