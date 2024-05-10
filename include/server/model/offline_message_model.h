@@ -1,8 +1,9 @@
-#ifndef OFFLINEMESSAGEMODEL_HPP
-#define OFFLINEMESSAGEMODEL_HPP
+#ifndef OFFLINEMESSAGEMODEL_H
+#define OFFLINEMESSAGEMODEL_H
 
 #include <string>
 #include <vector>
+#include "db_connection_pool.h"
 
 class OfflineMessageModel{
 public:

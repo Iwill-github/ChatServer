@@ -1,5 +1,5 @@
-#ifndef USERMODEL_HPP
-#define USERMODEL_HPP
+#ifndef USERMODEL_H
+#define USERMODEL_H
 
 #include "user.hpp"
 

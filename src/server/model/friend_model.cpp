@@ -1,4 +1,4 @@
-#include "friend_model.hpp"
+#include "friend_model.h"
 
 // 添加好友关系
 void FriendModel::insert(int userid, int friendid){
@@ -9,10 +9,17 @@ void FriendModel::insert(int userid, int friendid){
     snprintf(sql, sizeof(sql), "insert into friend values(%d, %d);", 
                 userid, friendid);
 
-    MySQL mysql;
-    if(mysql.connect()){
-        mysql.update(sql);
+    // MySQL mysql;
+    // if(mysql.connect()){
+    //     mysql.update(sql);
+    // }
+
+    DbConnectionPool *cp = DbConnectionPool::getDbConnectionPoolInstance();
+    shared_ptr<MySQLConnection> sp = cp->getMySQLConnection(); 
+    if(sp != nullptr){
+        sp->update(sql);    // update方法中，打印了更新情况，日志相关
     }
+
 }
 
 
@@ -23,10 +30,29 @@ vector<User> FriendModel::query(int userid){
     snprintf(sql, sizeof(sql), "select user.id, user.name, user.state from friend join user on friend.friendid = user.id where friend.userid = %d;",
                 userid);
 
+    // vector<User> vec;
+    // MySQL mysql;
+    // if(mysql.connect()){    // 连接数据库
+    //     if(MYSQL_RES* res = mysql.query(sql)){
+    //         // 查询成功，封装对象后返回
+    //         MYSQL_ROW row;
+    //         while(row = mysql_fetch_row(res)){ 
+    //             User user;
+    //             user.setId(atoi(row[0]));
+    //             user.setName(row[1]);
+    //             user.setState(row[2]);
+    //             vec.emplace_back(user);
+    //         }
+    //         mysql_free_result(res);
+    //     }
+    // }
+
     vector<User> vec;
-    MySQL mysql;
-    if(mysql.connect()){    // 连接数据库
-        if(MYSQL_RES* res = mysql.query(sql)){
+    DbConnectionPool *cp = DbConnectionPool::getDbConnectionPoolInstance();
+    shared_ptr<MySQLConnection> sp = cp->getMySQLConnection(); 
+
+    if(sp != nullptr){
+        if(MYSQL_RES* res = sp->query(sql)){
             // 查询成功，封装对象后返回
             MYSQL_ROW row;
             while(row = mysql_fetch_row(res)){ 

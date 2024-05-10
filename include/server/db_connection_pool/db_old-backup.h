@@ -1,5 +1,5 @@
-#ifndef DB_HPP
-#define DB_HPP
+#ifndef DB_OLD_BACKUP_H
+#define DB_OLD_BACKUP_H
 
 #include <mysql/mysql.h>
 #include <muduo/base/Logging.h>

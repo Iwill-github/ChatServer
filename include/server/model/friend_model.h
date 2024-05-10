@@ -1,8 +1,9 @@
-#ifndef FRIEND_MODEL_HPP
-#define FRIEND_MODEL_HPP
+#ifndef FRIEND_MODEL_H
+#define FRIEND_MODEL_H
 
 #include <vector>
-#include <db.hpp>
+
+#include "db_connection_pool.h"
 #include "user.hpp"
 
 // 维护好友信息的操作接口方法

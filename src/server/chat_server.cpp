@@ -1,6 +1,6 @@
-#include "chat_server.hpp"
+#include "chat_server.h"
 #include "json.hpp"
-#include "chat_service.hpp"
+#include "chat_service.h"
 
 ChatServer::ChatServer(muduo::net::EventLoop *loop,
             const muduo::net::InetAddress &listenAddr,

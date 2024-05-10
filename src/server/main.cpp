@@ -1,5 +1,5 @@
-#include "chat_server.hpp"
-#include "chat_service.hpp"
+#include "chat_server.h"
+#include "chat_service.h"
 #include <iostream>
 #include <signal.h>
 

@@ -1,9 +1,13 @@
-#ifndef GROUP_MODEL_HPP
-#define GROUP_MODEL_HPP
+#ifndef GROUP_MODEL_H
+#define GROUP_MODEL_H
 
-#include "group.hpp"
+
 #include <string>
 #include <vector>
+
+#include "group.hpp"
+#include "db_connection_pool.h"
+
 using namespace std;
 
 // 维护群组信息的操作接口方法

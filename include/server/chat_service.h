@@ -1,5 +1,5 @@
-#ifndef CHATSERVICE_HPP
-#define CHATSERVICE_HPP
+#ifndef CHATSERVICE_H
+#define CHATSERVICE_H
 
 #include <muduo/net/TcpConnection.h>
 #include <muduo/base/Timestamp.h>
@@ -11,11 +11,11 @@ using json = nlohmann::json;
 using namespace std::placeholders;
 
 #include "user.hpp"
-#include "user_model.hpp"
-#include "offline_message_model.hpp"
-#include "friend_model.hpp"
-#include "group_model.hpp"
-#include "redis.hpp"
+#include "user_model.h"
+#include "offline_message_model.h"
+#include "friend_model.h"
+#include "group_model.h"
+#include "redis.h"
 
 
 // 表示处理消息的事件回调类型

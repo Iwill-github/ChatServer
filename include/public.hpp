@@ -19,4 +19,6 @@ enum EnMsgType{
     LOGINOUT_MSG,       // 10注销消息
 };
 
+#define DB_CNF_PATH "/home/iwill/wly/ChatServer/include/server/db_connection_pool/db.cnf"
+
 #endif

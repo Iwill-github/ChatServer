@@ -1,5 +1,5 @@
-#ifndef REDIS_HPP
-#define REDIS_HPP
+#ifndef REDIS_H
+#define REDIS_H
 
 #include <hiredis/hiredis.h>
 #include <thread>
