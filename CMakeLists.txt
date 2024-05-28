@@ -11,9 +11,9 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
 include_directories(
     ${PROJECT_SOURCE_DIR}/include
     ${PROJECT_SOURCE_DIR}/include/server
-    ${PROJECT_SOURCE_DIR}/include/server/db
-    ${PROJECT_SOURCE_DIR}/include/server/pojo
+    ${PROJECT_SOURCE_DIR}/include/server/db_connection_pool
     ${PROJECT_SOURCE_DIR}/include/server/model
+    ${PROJECT_SOURCE_DIR}/include/server/pojo
     ${PROJECT_SOURCE_DIR}/include/server/redis
     ${PROJECT_SOURCE_DIR}/thirdparty
 )
