@@ -1,4 +1,5 @@
 #include "db_connection_pool.h"
+#include "public.h"
 
 
 // 2. 获取连接池单例对象的接口函数（线程安全的懒汉单例模式，即，第一次获取实例的时候才进行实例化）

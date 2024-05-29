@@ -25,7 +25,7 @@ public:
     shared_ptr<MySQLConnection> getMySQLConnection();           // 消费者，从连接池中获取一个可用的空闲连接（通过智能指针，管理指针在离开作用域后的自动归还到连接池）
 
 private:
-    DbConnectionPool();                       // 1. 构造函数私有化
+    DbConnectionPool();                         // 1. 构造函数私有化
     bool loadConfigFile();                      // 加载配置文件
     void produceConnectionTask();               // 生产者线程，专门负责生产新连接
     void scannerConnectionTask();               // 定时线程，扫描超过maxIdleTime时间的空闲连接，进行多余的连接回收
