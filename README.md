@@ -128,5 +128,21 @@ sh auto_build.sh
 ![test](./imgs/test.jpg "test")
 
 
+# 4. Jmeter压测
+    不使用集群：
+        ulimit -n 1024            
+            并发连接数：100    TPS：1241.1/sec
+            并发连接数：200    TPS：1922.7/sec
+            并发连接数：400    TPS：2383.5/sec
+            并发连接数：500    TPS：2890.1/sec
+        ulimit -n 2048
+            并发连接数：600    TPS：2806.3/sec
+            并发连接数：1000   TPS：2798.1/sec
+
+    使用集群：
+        ulimit -n 1024
+            待测试...
+
+    sudo netstat -anp | grep 8000 | wc -l   # 查看8000端口监听的进程数量
 
 
