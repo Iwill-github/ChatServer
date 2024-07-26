@@ -1,8 +1,10 @@
 # ChatServer
 基于 C++ 实现的集群聊天服务器和客户端（muduo、pthread、mysql、json、nginx、keepalived、redis）
-集群框架：采用如下图Nginx + Keepalived主从模式的高可用集群方案
+
+**集群框架**：采用如下图Nginx + Keepalived主从模式的高可用集群方案
 ![test](./imgs/cluster_framework.png "cluster_framework")
-业务框架：
+
+**业务框架**：
 
 
 # 1. 环境配置（ubuntu）
