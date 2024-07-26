@@ -1,6 +1,8 @@
 # ChatServer
 基于 C++ 实现的集群聊天服务器和客户端（muduo、pthread、mysql、json、nginx、redis）
 
+![test](./imgs/cluster_framework.png "cluster_framework")
+
 
 # 1. 环境配置（ubuntu）
 
