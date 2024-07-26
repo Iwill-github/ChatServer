@@ -2,7 +2,6 @@
 基于 C++ 实现的集群聊天服务器和客户端（muduo、pthread、mysql、json、nginx、redis）
 
 
-
 # 1. 环境配置（ubuntu）
 
 ## 1.1 安装cmake、g++等编译环境
@@ -86,8 +85,8 @@ sudo vim /etc/nginx/nginx.conf      # 添加tcp长连接负载均衡配置（拷
 # nginx tcp loadbalance config
 stream{
     upstream MyServer{
-    server 127.0.0.1:6000 weight=1 max_fails=3 fail_timeout=30s;    # chatServer1 运行在本地的6000端口
-    server 127.0.0.1:6001 weight=1 max_fails=3 fail_timeout=30s;    # chatServer2 运行在本地的6001端口（注意，实际上服务器集群应该运行在其他服务器上，此处用于简单测试）
+    server 192.168.48.129:6000 weight=1 max_fails=3 fail_timeout=30s;    # chatServer1 运行在server1的6000端口
+    server 192.168.48.132:6000 weight=1 max_fails=3 fail_timeout=30s;    # chatServer2 运行在server2的6000端口
     }
 
     server{
@@ -114,7 +113,6 @@ sh auto_build.sh
 ```
 
 
-
 # 3. 测试
 
 ```bash
@@ -128,6 +126,7 @@ sh auto_build.sh
 ![test](./imgs/test.jpg "test")
 
 
+
 # 4. Jmeter压测
     不使用集群：
         ulimit -n 1024            
@@ -138,6 +137,7 @@ sh auto_build.sh
         ulimit -n 2048
             并发连接数：600    TPS：2806.3/sec
             并发连接数：1000   TPS：2798.1/sec
+
 
     使用集群：
         ulimit -n 1024
