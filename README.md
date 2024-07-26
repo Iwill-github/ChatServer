@@ -4,7 +4,7 @@
 **集群框架**：采用如下图Nginx + Keepalived主从模式的高可用集群方案
 ![test](./imgs/cluster_framework.png "cluster_framework")
 
-**业务框架**：
+**业务框架**：采用如下图的业务方案
 
 
 # 1. 环境配置（ubuntu）
@@ -128,7 +128,7 @@ sh auto_build.sh
 ./bin/ChatClient 127.0.0.1 8000		# 客户端2
 ```
 
-![test](./imgs/test.jpg "test")
+![test](./imgs/single_node_nginx_test.jpg "test")
 
 
 
