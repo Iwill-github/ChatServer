@@ -93,8 +93,8 @@ $ sudo vim /etc/nginx/nginx.conf       # 添加tcp长连接负载均衡配置（
 # nginx tcp loadbalance config
 stream{
     upstream MyServer{
-        server 192.168.48.129:6000 weight=1 max_fails=3 fail_timeout=30s;    # chatServer1 运行在本地的6000端口
-        server 192.168.48.132:6000 weight=1 max_fails=3 fail_timeout=30s;    # chatServer2 运行在本地的6001端口
+        server 192.168.48.129:6000 weight=1 max_fails=3 fail_timeout=30s;    # chatServer1 运行在server1的6000端口
+        server 192.168.48.132:6000 weight=1 max_fails=3 fail_timeout=30s;    # chatServer2 运行在server2的6001端口
     }
 
     server{
@@ -113,8 +113,8 @@ $ sudo vim /etc/nginx/nginx.conf      # 添加tcp长连接负载均衡配置（�
 # nginx tcp loadbalance config
 stream{
     upstream MyServer{
-    server 192.168.48.129:6000 weight=1 max_fails=3 fail_timeout=30s;    # chatServer1 运行在本地的6000端口
-    server 192.168.48.132:6000 weight=1 max_fails=3 fail_timeout=30s;    # chatServer2 运行在本地的6001端口
+    server 192.168.48.129:6000 weight=1 max_fails=3 fail_timeout=30s;    # chatServer1 运行在server1的6000端口
+    server 192.168.48.132:6000 weight=1 max_fails=3 fail_timeout=30s;    # chatServer2 运行在server2的6001端口
     }
 
     server{
