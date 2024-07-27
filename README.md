@@ -4,6 +4,14 @@
 **集群架构**：采用如下图 Nginx + Keepalived 主从模式的高可用集群方案
 ![test](./imgs/cluster_framework.png "cluster_framework")
 
+**架构规划**
+
+| 角色           | vip地址(Keepalived) | ip地址(Nginx)       | 软件               | OS             |
+| -------------- | ------------------- | ------------------- | ------------------ | -------------- |
+| nginx 主服务器 | 192.168.48.100:8000 | 192.168.48.129:8000 | nginx + keepalived | ubuntu 20.04   |
+| nginx 从服务器 | 192.168.48.100:8000 | 192.168.48.132:8000 | nginx + keepalived | ubuntu 20.04_2 |
+
+
 
 **业务架构**：采用如下图的业务架构
 
