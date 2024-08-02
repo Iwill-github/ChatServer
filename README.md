@@ -1,6 +1,6 @@
 # 0. ChatServer
 
-**项目名称**：基于 C++ 实现的集群聊天服务器和客户端
+**项目名称**：基于 C++ 实现的高可用集群聊天服务器和客户端
 
 **技术栈**：muduo、mysql、json、nginx、keepalived、redis
 
